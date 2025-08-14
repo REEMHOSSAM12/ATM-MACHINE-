@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bank ATM</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h2> ATM MACHINE</h2>
+
+<div id="login">
+    <input type="password" id="pin" placeholder="Enter PIN">
+    <button id="loginBtn">Login</button>
+</div>
+
+<div id="atmSection" style="display:none;">
+    <select id="atmOptions">
+        <option value="">-- Choose an Option --</option>
+        <option value="withdraw">Withdraw</option>
+        <option value="deposit">Deposit</option>
+        <option value="balance">Check Balance</option>
+    </select>
+
+    <div id="amountSection" style="display:none;">
+        <input type="number" id="amount" placeholder="Enter Amount">
+        <button id="confirmBtn">Confirm</button>
+    </div>
+
+    <p id="message">Please select an option from above.</p>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
